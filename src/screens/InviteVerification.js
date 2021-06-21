@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import { ScrollView, StyleSheet, TextInput,ImageBackground } from 'react-native';
 import { colors } from '../constants';
-import { Alert } from 'react-native';
+// import { Alert } from 'react-native';
 
 import { Button,  TextButton, SocialButton,Logo } from '../Components';
 // service

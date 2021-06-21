@@ -2,11 +2,13 @@ import auth from '@react-native-firebase/auth';
 import { Alert } from 'react-native';
 import firestore from '@react-native-firebase/firestore';
 import { GoogleSignin } from '@react-native-community/google-signin';
+import navigation from '../navigation';
+import WalletSecret from '../screens/WalletSecret';
 
 const googleLogin = async() => {
     // Get the users ID token
   const { idToken } = await GoogleSignin.signIn();
-
+    console.log(idToken);
   // Create a Google credential with the token
   const googleCredential = auth.GoogleAuthProvider.credential(idToken);
 
@@ -58,7 +60,7 @@ const signIn = (email, password) => {
     }
 
     return auth().signInWithEmailAndPassword(email, password)
-    .then(() => {})
+    .then()
     .catch(
         err => Alert.alert(err.code, err.message)
     )
@@ -133,4 +135,4 @@ const Auth = {
     
 }
 
-export default Auth
+module.exports=Auth;

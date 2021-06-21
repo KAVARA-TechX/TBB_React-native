@@ -28,6 +28,7 @@
     "react-native-screens": "^3.3.0",
     "react-native-splash-screen": "^3.2.0",
     "react-native-vector-icons": "^8.1.0",
+    "react-native-webview": "^11.6.4",
     "reanimated-bottom-sheet": "^1.0.0-alpha.22",
     "tachyons": "^4.12.0"
   },

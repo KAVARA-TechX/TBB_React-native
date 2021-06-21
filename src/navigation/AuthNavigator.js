@@ -1,6 +1,6 @@
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
-import { Login, SignUp, ForgetPassword, OtpSignUp, EmailLogin,InviteVerification } from "../screens";
+import { Login, SignUp, ForgetPassword, OtpSignUp, EmailLogin,InviteVerification,WalletSecret } from "../screens";
 
 const Stack = createStackNavigator();
 
@@ -9,8 +9,7 @@ export default AuthNavigator = () => (
         screenOptions = {{
             headerShown: null
         }}
-        >   
-        
+        >
         <Stack.Screen
             name="InviteVerification"
             component={InviteVerification}
@@ -22,7 +21,7 @@ export default AuthNavigator = () => (
         <Stack.Screen
             name="EmailLogin"
             component={EmailLogin}
-        />
+        />  
         <Stack.Screen 
             name="SignUp" 
             component= {SignUp}
@@ -34,10 +33,6 @@ export default AuthNavigator = () => (
         <Stack.Screen
             name="OtpSignUp" 
             component= {OtpSignUp}
-        />
-        <Stack.Screen
-            name="WalletSecret"
-            component={WalletSecret}
-            />
+        />         
     </Stack.Navigator> 
 )

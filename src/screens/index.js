@@ -5,3 +5,5 @@ export { default as Home } from './Home';
 export { default as OtpSignUp } from './OtpSignUp';
 export { default as EmailLogin} from './EmailLogin';
 export { default as InviteVerification} from './InviteVerification';
+export { default as UserProfile} from './UserProfile';
+export {default as WalletSecret} from './WalletSecret';

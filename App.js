@@ -8,9 +8,7 @@ import RNBootSplash from "react-native-bootsplash";
 
 export default App = () => {
   SplashScreen.hide();
-  return(
-      <AppContainer/>
-
+  return(<AppContainer/>
   )
 }
 

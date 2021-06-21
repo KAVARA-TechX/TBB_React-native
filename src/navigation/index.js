@@ -4,9 +4,9 @@ import { GoogleSignin } from '@react-native-community/google-signin';
 // import navigators
 import AppNavigator from './AppNavigator';
 import AuthNavigator from './AuthNavigator';
-
 // firebase auth
 import auth from '@react-native-firebase/auth';
+import { WalletSecret } from '../screens';
 
 export default AppContainer = () => {
     // Set an initializing state whilst Firebase connects
@@ -31,7 +31,7 @@ export default AppContainer = () => {
   if (initializing) return null;
 
     return(
-        <NavigationContainer style={{flex:6}}>
+        <NavigationContainer style={{flex:1}}>
             { user ? <AppNavigator/> : <AuthNavigator/> }
         </NavigationContainer>
     )

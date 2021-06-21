@@ -27,7 +27,6 @@ export default OtpSignUp = ({navigation}) => {
 
     return(
         <ImageBackground source={require('../Components/background.png')} style={styles.imgBackground} >
-        <Image source={require('../Components/logo_yellow.png')} style={{width:200,height:200}} />
 
         <Text style={styles.heading}>Signup with OTP</Text>
 

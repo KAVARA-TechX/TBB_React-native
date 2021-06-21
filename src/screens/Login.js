@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
         width:ScreenWidth,
         height:ScreenHeight,
         flex:1,alignItems: 'center',
-        justifyContent: 'center', fontSize: 24,
+        justifyContent: 'flex-end', fontSize: 24,
         fontWeight: 'bold',
         paddingVertical: 10,
     },
@@ -50,6 +50,6 @@ const styles = StyleSheet.create({
     heading:{
         fontSize: 24,
         fontWeight: 'bold',
-        paddingVertical: 10,
+
     }
 })

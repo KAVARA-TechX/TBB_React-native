@@ -14,8 +14,8 @@ export default EmailLogin = ({navigation}) => {
 
     return(
         <ImageBackground source={require('../Components/background.png')} style={styles.imgBackground} >
+                        <Text style={{color:'white',fontSize:40}}>Login</Text>
 
-            <Image source={require('../Components/logo_yellow.png')} style={{width:200,height:200, marginTop:25}} />
             <Input 
                 placeholder= "Email"
                 value={email}
